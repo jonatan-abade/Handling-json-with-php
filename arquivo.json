@@ -1,17 +1,1 @@
-[
-  {
-    "nome": "Jonatan",
-    "idade": 22,
-    "sexo": "F"
-  },
-  {
-    "nome": "Maria",
-    "idade": "18",
-    "sexo": "F"
-  },
-  {
-    "nome": "Maria",
-    "idade": "18",
-    "sexo": "F"
-  }
-]
+[{"nome":"Jonatan","idade":22,"sexo":"F"},{"nome":"Maria","idade":"18","sexo":"F"},{"nome":"Gabriela","idade":"30","sexo":"F"},{"nome":"Gabriela","idade":"30","sexo":"F"}]

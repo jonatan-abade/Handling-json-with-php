@@ -40,6 +40,17 @@ $arquivo = file_get_contents('arquivo.json');
 
 $pessoas = json_decode($arquivo, true);
 
+array_push($pessoas, $pessoa);
+
+$jpessoas = json_encode($pessoas, true);
+
+$fp = fopen('arquivo.json', 'w');
+fwrite($fp, $jpessoas);
+fclose($fp);
+
+
+$pessoas = json_decode($arquivo, true);
+
 foreach($pessoas as $pessoa){?>
     <fieldset>
     <legend>Pessoa</legend>
@@ -48,14 +59,6 @@ foreach($pessoas as $pessoa){?>
     <p><b>Sexo: </b><?=$pessoa['sexo']?></p>
     </fieldset>  
 <?php };
-
-array_push($pessoas, $pessoa);
-
-$jpessoas = json_encode($pessoas, true);
-
-$fp = fopen('arquivo.json', 'w');
-fwrite($fp, $jpessoas);
-fclose($fp);
 
 
 
